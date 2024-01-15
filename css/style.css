@@ -3,5 +3,165 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
-    vertical-align: baseline;
+    
 }
+body{
+    background-color: rgb(201, 201, 177);
+}
+.row-limit-size {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+                                                /*HEADER*/
+.head-top{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+
+#burger{
+    display: none;
+    display: block;
+    margin-top: 20px;
+    margin-right: -50px;
+}
+
+.main-menu{
+    display: none;
+    display: inline;
+}
+
+
+
+
+.main-menu > ul > li > a {
+    display: none;
+    flex-direction: column;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1400px) {
+    .main-menu > ul > li > a {
+        padding: 0 5px;
+    }
+}
+                                                    /*MAIN*/
+
+.page01{
+    
+    display: flex;
+    
+    display: inline;
+    text-align: center;
+    align-items: center;
+    
+    height: 20px;
+    
+}
+.imgpage001{
+    border-radius: 0 0 40px 40px;
+}
+
+.imgpage01{
+    border-radius: 40px;
+}
+
+
+.texte01{
+    
+    width: 1000px;
+    font-family:libre baskerville;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 19px;
+    text-align: justify;
+}
+        /*texte page service*/
+.texte02 {
+    font-family: libre baskerville;
+    width: 500px;
+    text-align: justify;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
+}
+main > .texte02 > span{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-family:libre baskerville;
+    font-size: 22px;
+}
+.img2p2{
+    border-radius: 40px 40px 0 0; 
+    
+
+}
+        /*fin texte page service*/
+main > .texte01 > span{
+    display: block;
+    
+    font-weight: bold;
+    font-family:libre baskerville;
+    font-size: 22px;
+    
+}
+                                                /*FOOTER*/
+
+
+.footer01{
+    position: relative;
+    display: flex;
+    background-color:black;
+    height: 404px;
+    justify-content: space-between;
+    
+}
+.footerlogo{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.picto01{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin-top: 150px;
+    height: 150px;
+    gap: 50px;
+    
+    
+
+}
+.footertext{
+    font-family: libre baskerville;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 150px;
+    font-size: 25px;
+    color: white;
+    
+}
+
+
+
+
+
+    
+
