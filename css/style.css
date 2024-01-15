@@ -14,6 +14,9 @@ body{
     margin: 0 auto;
 
 }
+.flex{
+    display: flex;
+}
                                                 /*HEADER*/
 .head-top{
     display: flex;
@@ -23,22 +26,42 @@ body{
 
 
 #burger{
-    display: none;
-    display: block;
     margin-top: 20px;
     margin-right: -50px;
+    
+}
+.menu{
+    position: absolute;
+    right: 5em;
+    top:2em ;
+
 }
 
 .main-menu{
-    display: none;
-    display: inline;
+    display: flex;
+    background-color: white;
+    border-radius: 0.5em ;
+}
+.main-menu ul{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.petitebordure{
+    width: 70%;
+    height: 0.05em;
+    background-color:rgb(73, 70, 70);
+    box-shadow: 1px 1px 1px #222;
+
+    
 }
 
 
 
 
 .main-menu > ul > li > a {
-    display: none;
+    
     flex-direction: column;
     display: block;
     height: 80px;
@@ -70,7 +93,8 @@ body{
     
 }
 .imgpage001{
-    border-radius: 0 0 40px 40px;
+    
+    width: 100%;
 }
 
 .imgpage01{
