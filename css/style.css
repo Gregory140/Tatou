@@ -22,36 +22,82 @@ body{
     display: flex;
     justify-content: center;
     background-color: black;
+    z-index: 200;
 }
 
 
 #burger{
-    margin-top: 20px;
-    margin-right: -50px;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
     
 }
 .menu{
-    position: absolute;
-    right: 0.1em;
-    top:1em ;
+   
+    background-color: rgb(20, 236, 236);
+    
+    
 
 }
 
 .main-menu{
+    visibility: hidden;
+    
+    
+    position: absolute;
+    width: 100%;
     display: flex;
-    background-color: white;
-    border-radius: 0.5em ;
+    top:320px ;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transition:2s;
+    transform:translateY(-420px) ;
+    z-index: 1;
+    
+    
+    
+}
+.main-menu.active{
+
+visibility: visible;
+
+transform:translateY(0);
+
+
+
 }
 .main-menu ul{
+    
     flex-direction: column;
     align-items: center;
+    
+    width: 100%;
+    
+}
+.main-menu li:not(.petitebordure){
+    width: 100%;
+    
+}
+.main-menu a {
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    padding: 0;
+    width: 100%;
+    color: #fff;
+    
+    
 }
 
 
 .petitebordure{
-    width: 70%;
+    width: 6em;
     height: 0.05em;
-    background-color:rgb(73, 70, 70);
+    background-color:rgb(255, 255, 255);
     box-shadow: 1px 1px 1px #222;
 
     
@@ -79,19 +125,15 @@ body{
     display: block;
     height: 80px;
     line-height: 80px;
-    padding: 0 15px;
+    
     font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+    
     font-weight: 700;
     font-size: 1rem;
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 1400px) {
-    .main-menu > ul > li > a {
-        padding: 0 5px;
-    }
-}
+
                                                     /*MAIN*/
 
 .page01{
@@ -117,6 +159,7 @@ body{
 .img2p2{
     position: relative;
     bottom: -4px;
+    
 }
 .texte01{
     
@@ -133,7 +176,9 @@ body{
     text-align: justify;
     text-align: center;
     width: 70%;
-    padding-top: 10px;
+    max-width: 30em ;
+    
+    padding-top: 20px;
     padding-bottom: 40px;
     margin: 0 auto;
     font-family: libre baskerville;
@@ -141,10 +186,12 @@ body{
 main > .texte02 > span{
     display: block;
     margin-bottom: 10px;
-    margin-top: 40px;
+    margin-top: 70px;
     font-weight: bold;
     font-family:libre baskerville;
     font-size: 22px;
+    
+    
 }
 
 
