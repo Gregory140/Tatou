@@ -32,8 +32,8 @@ body{
 }
 .menu{
     position: absolute;
-    right: 5em;
-    top:2em ;
+    right: 0.1em;
+    top:1em ;
 
 }
 
@@ -57,7 +57,20 @@ body{
     
 }
 
-
+.bordurelignetop {
+    margin:0 auto;
+    margin-top: 2.5em;
+    width: 22%;
+    height: 0.05em;
+    background-color:rgb(73, 70, 70); 
+}
+.bordurelignebottom{
+    margin:0 auto;
+    margin-bottom: 2.5em;
+    width: 22%;
+    height: 0.05em;
+    background-color:rgb(73, 70, 70);
+}
 
 
 .main-menu > ul > li > a {
@@ -98,13 +111,16 @@ body{
 }
 
 .imgpage01{
-    border-radius: 40px;
+    border-radius: 1em;
+    max-width:100% ;
 }
-
-
+.img2p2{
+    position: relative;
+    bottom: -4px;
+}
 .texte01{
     
-    width: 1000px;
+    width: 70%;
     font-family:libre baskerville;
     text-align: center;
     margin-top: 30px;
@@ -114,12 +130,13 @@ body{
 }
         /*texte page service*/
 .texte02 {
-    font-family: libre baskerville;
-    width: 500px;
     text-align: justify;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    
+    text-align: center;
+    width: 70%;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    font-family: libre baskerville;
 }
 main > .texte02 > span{
     display: block;
@@ -129,11 +146,8 @@ main > .texte02 > span{
     font-family:libre baskerville;
     font-size: 22px;
 }
-.img2p2{
-    border-radius: 40px 40px 0 0; 
-    
 
-}
+
         /*fin texte page service*/
 main > .texte01 > span{
     display: block;
@@ -142,6 +156,31 @@ main > .texte01 > span{
     font-family:libre baskerville;
     font-size: 22px;
     
+}
+                    /*Galerie*/
+.titregalerie{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: libre baskerville;
+    font-size: 3em;
+}
+.galerietatouage  {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}       
+
+
+.imggalerie:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-out ;
+}
+.imggalerie{
+    margin: 2em;
 }
                                                 /*FOOTER*/
 
@@ -180,7 +219,58 @@ main > .texte01 > span{
     margin-top: 150px;
     font-size: 25px;
     color: white;
+}
+                /* formulaire/maps page contact*/
+.googlemaps{
+    margin-left: 5em;
     
+}
+
+.formulaire {
+    position: relative;
+    bottom: 2em;
+    margin:1em;
+    width: 350px;
+    border: 1px solid #222;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #222;
+    font-family: libre baskerville;
+}
+.formumaps{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 
