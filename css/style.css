@@ -42,7 +42,7 @@ body{
     padding: 0 2em;
     font-family:libre baskerville;
     font-size: 1.2rem;
-    color: #ffffff;
+    color: rgb(211, 206, 200);
  
 }
 
@@ -254,10 +254,12 @@ main > .texte01 > span{
     font-size: 3em;
 }
 .galerietatouage  {
-
     display: flex;
-    justify-content: center;
+    display: grid;
     flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    margin:0 17em;
+    
     overflow: hidden;
     
 }       
@@ -268,7 +270,7 @@ main > .texte01 > span{
     transition: transform 0.5s ease-out ;
 }
 .imggalerie{
-    margin: 2em;
+    margin: 1em;
 }
                                                 /*FOOTER*/
 
