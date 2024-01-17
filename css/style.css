@@ -17,40 +17,78 @@ body{
 .flex{
     display: flex;
 }
-                                                /*HEADER*/
+                            /*HEADER*/
 .head-top{
     display: flex;
     justify-content: center;
     background-color: black;
     z-index: 200;
 }
+                        /*menu ligne*/
+.menu-ligne{
+    position: absolute;
+    top: 15em;
+    
+}
+.menu-ligne > ul > li {
+    position: relative;
+    
+}
+.menu-ligne > ul > li > a {
+    
+    height: 80px;
+    line-height: 80px;
+    padding: 0 2em;
+    font-family:libre baskerville;
+    color: #ffffff;
+ 
+}
+
+@media screen and (max-width:800px) {
+    .menu-ligne{
+        display: none;
+    }
+    
+}
 
 
+
+                        /*menu burger responsive*/
+.menu{
+    opacity: 0;
+}
+@media screen and (max-width:800px) {
+    .menu{
+        opacity: 1;
+        
+    }
+    
+}
 #burger{
+    
     position: absolute;
     top: 0.5em;
     right: 1em;
     
 }
-.menu{
-   
-    background-color: rgb(20, 236, 236);
-    
+
+button{
+    background-color: black;
+    border: 2px solid black;
+}
+
     
 
-}
 
 .main-menu{
     visibility: hidden;
-    
-    
     position: absolute;
     width: 100%;
-    display: flex;
+    
     top:320px ;
     left: 0;
     background-color: rgb(0, 0, 0);
-    transition:2s;
+    transition:1s;
     transform:translateY(-420px) ;
     z-index: 1;
     
@@ -132,6 +170,7 @@ transform:translateY(0);
     font-size: 1rem;
     text-transform: uppercase;
 }
+
 
 
                                                     /*MAIN*/
@@ -231,42 +270,81 @@ main > .texte01 > span{
 }
                                                 /*FOOTER*/
 
+ /*max-width, si l'écran est inferieur ou égal, alors {...}*/
+ /*max-width = desktop-first*/
+ /*min-width = mobile-first*/
+ /*min-width, si l'écran est supérieur ou égal, alors{...}*/  
+ 
+ 
+@media screen and (max-width: 800px) {
+    .footertext{
+        opacity: 0;
+    }
+    
+}
+
+
+
 
 .footer01{
-    position: relative;
+    
     display: flex;
     background-color:black;
-    height: 404px;
-    justify-content: space-between;
-    
+    height: 30em;
+    justify-content: space-around;
+    width: 100%;
 }
 .footerlogo{
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-.picto01{
     display: flex;
-    flex-direction: row;
-    width: 500px;
-    margin-top: 150px;
-    height: 150px;
-    gap: 50px;
+    align-items: center;
     
-    
-
 }
+.pictofooter{
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+    gap: 1em;
+    
+    
+}
+
+
+@media screen and (max-width:800px) {
+    .pictofooter{
+        flex-direction: column;
+        justify-content: center;
+        transform: scale(0.8);
+        
+        
+    }
+    
+    
+    
+}
+
 .footertext{
+    display: flex;
+    align-items: center;
     font-family: libre baskerville;
     text-align: center;
-    margin-left: 100px;
-    margin-top: 150px;
-    font-size: 25px;
+    
+    
+    
+    font-size: 1.1em;
     color: white;
 }
+
+                /*picto info contact*/
+
+.infocontact{
+    text-align: center;
+    
+}
+.pictocontact{
+    font-family: libre baskerville;
+    margin: 2em;
+}
+
                 /* formulaire/maps page contact*/
 .googlemaps{
     margin-left: 5em;
@@ -307,7 +385,7 @@ input, select {
     border-radius: 4px;
 }
 
-button {
+.buttonformu {
     background-color: #4caf50;
     color: #fff;
     padding: 10px;
@@ -316,7 +394,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.buttonformu:hover {
     background-color: #45a049;
 }
 
