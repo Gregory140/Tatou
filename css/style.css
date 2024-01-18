@@ -1,3 +1,7 @@
+:root{
+--color:#fff;
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +10,7 @@
     
 }
 body{
-    background-color: rgb(211, 206, 200);
+    background-color: var(--color);
 }
 .row-limit-size {
     max-width: 1200px;
@@ -15,8 +19,11 @@ body{
 
 }
 .flex{
+    
     display: flex;
 }
+
+
                             /*HEADER*/
 .head-top{
     display: flex;
