@@ -142,11 +142,20 @@ transform:translateY(0);
 }
 
 .bordurelignetop {
-    margin:0 auto;
+    margin:15px auto;
     margin-top: 2.5em;
     width: 22%;
     height: 0.05em;
     background-color:rgb(73, 70, 70); 
+}
+.bordurelignemiddle{
+    width: 22%;
+    height: 0.05em;
+    
+    margin: 30px auto;
+
+    background-color:rgb(73, 70, 70);
+
 }
 .bordurelignebottom{
     margin:0 auto;
@@ -252,22 +261,33 @@ main > .texte01 > span{
     font-size: 3em;
 }
 .galerietatouage  {
-
     display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.imggalerie{
     justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
+}
+   
+.imggalerie img {
+    height: 25em;
+    margin: 10px;
+    border-radius: 3px;
+}   
     
-}       
-
-
-.imggalerie:hover{
-    transform: scale(1.2);
+.galerietatouage img:hover{
+    transform: scale(1.1);
     transition: transform 0.5s ease-out ;
 }
-.imggalerie{
-    margin: 2em;
-}
+
+
+
+
+
+    
+
                                                 /*FOOTER*/
 
  /*max-width, si l'écran est inferieur ou égal, alors {...}*/
@@ -287,7 +307,7 @@ main > .texte01 > span{
 
 
 .footer01{
-    
+    flex-wrap: wrap;
     display: flex;
     background-color:black;
     height: 30em;
@@ -297,22 +317,26 @@ main > .texte01 > span{
 .footerlogo{
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 .pictofooter{
     display: flex;
     align-items: center;
-    margin-right: 1em;
+    
     gap: 1em;
     
     
 }
 
 
+
 @media screen and (max-width:800px) {
     .pictofooter{
-        flex-direction: column;
+        
+        
         justify-content: center;
+        text-align: center;
         transform: scale(0.8);
         
         
@@ -341,33 +365,46 @@ main > .texte01 > span{
     
 }
 .pictocontact{
+    
+    justify-content: center;
     font-family: libre baskerville;
     margin: 2em;
+    height: 50px;
+    text-align: center;
+    
 }
 
+
                 /* formulaire/maps page contact*/
+
+
+.formumaps{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
 .googlemaps{
     margin-left: 5em;
     
 }
 
 .formulaire {
-    position: relative;
-    bottom: 2em;
+    
+    bottom: 3em;
     margin:1em;
     width: 350px;
     border: 1px solid #222;
     background-color: transparent;
     padding: 20px;
-    border-radius: 3px;
+    border-radius: 2px;
     box-shadow: 0 0 5px #222;
     font-family: libre baskerville;
 }
-.formumaps{
-    display: flex;
-    justify-content: space-around;
 
-}
 
 form {
     display: flex;
