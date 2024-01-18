@@ -6,7 +6,7 @@
     
 }
 body{
-    background-color: rgb(201, 201, 177);
+    background-color: rgb(211, 206, 200);
 }
 .row-limit-size {
     max-width: 1200px;
@@ -27,24 +27,23 @@ body{
                         /*menu ligne*/
 .menu-ligne{
     position: absolute;
-    top: 15em;
+    top: 28%;
+    width: 50em;
     
 }
-.menu-ligne > ul > li {
-    position: relative;
-    
-}
+
 .menu-ligne > ul > li > a {
     
     height: 80px;
     line-height: 80px;
     padding: 0 2em;
     font-family:libre baskerville;
-    color: #ffffff;
+    font-size: 1.2rem;
+    color: rgb(211, 206, 200);
  
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:970px) {
     .menu-ligne{
         display: none;
     }
@@ -57,7 +56,7 @@ body{
 .menu{
     opacity: 0;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:970px) {
     .menu{
         opacity: 1;
         
@@ -330,8 +329,7 @@ main > .texte01 > span{
 }
 
 
-
-@media screen and (max-width:800px) {
+@media screen and (max-width:970px) {
     .pictofooter{
         
         
