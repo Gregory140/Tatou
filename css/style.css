@@ -42,7 +42,7 @@ body{
     line-height:80px;
     font-size:1.2rem;
     color: rgb(211, 206, 200);
-    font-family:libre baskerville;
+    font-family: 'Julius Sans One', sans-serif;
     
 }
 
@@ -137,7 +137,25 @@ button{
     text-transform:uppercase;
     font-family:Arial, Helvetica, sans-serif;
 }
-                                                    /*MAIN*/
+                             /*MAIN*/
+
+.titredepage{
+    text-align: center;
+    
+    margin-top: 1em;
+    font-weight:550;
+    font-size:4rem;
+    font-family: 'Julius Sans One', sans-serif;
+    
+    
+    
+}
+
+
+
+
+
+
 .page01{
     display:flex;
     display:inline;
@@ -162,8 +180,10 @@ button{
     width:70%;
     margin-top:30px;
     margin-bottom:40px;
-    font-size:19px;
-    font-family:libre baskerville;
+    font-size: 1rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 700;
+
 }
         /*texte page service*/
 .texte02 {
@@ -174,64 +194,116 @@ button{
     padding-top:20px;
     padding-bottom:40px;
     margin:0 auto;
-    font-family:libre baskerville;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    
 }
 main > .texte02 > span{
     display:block;
     margin-bottom:10px;
     margin-top:70px;
-    font-weight:bold;
+    font-weight:700;
     font-size:22px;
-    font-family:libre baskerville;
+    font-family: 'Julius Sans One', sans-serif;
 }
         /*fin texte page service*/
 main > .texte01 > span{
     display:block;
     font-weight:bold;
     font-size:22px;
-    font-family:libre baskerville;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 900;
 }
                     /*Galerie*/
-@media screen and (max-width:535px) {
-    .imggalerie > a > img {
-        
-        
-        
-        
-        
-        
-        
-    }
-    
-}
+
 
 
 .titregalerie{
     text-align:center;
     margin-top:1em;
     margin-bottom:1em;
-    font-size:3em;
-    font-family:libre baskerville;
+    font-size:2.5em;
+    font-family: 'Julius Sans One', sans-serif;
 }
 .galerietatouage{
     display:flex;
+    justify-content: center;
     align-items:center;
-    flex-direction:column;
-    width:100%;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    height: 100%;
+    
+    
 }
-.imggalerie{
-    justify-content:center;
-}
-.imggalerie img {
-    height:25em;
+
+.imggalerie1 img {
+    
+    display: flex;
+    
+    height:18em;
     margin:10px;
-    border-radius:3px;
+    border-radius:2px;
+    
 }   
+.imggalerie2 img {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height:18em;
+    margin:10px;
+    border-radius:2px;
+    
+} 
+.imggalerie3 img {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    height:18em;
+    margin:10px;
+    border-radius:2px;
+    
+} 
+
+.imggalerie4 img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:18em;
+    margin:10px;
+    border-radius:2px;
+    
+} 
+.imggalerie5 img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:18em;
+    margin:10px;
+    border-radius:2px;
+    
+} 
+.imggalerie6 img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:18em;
+    margin:10px;
+    border-radius:2px;
+    
+} 
+
+
+
+
+
+
 .galerietatouage img:hover{
-    transform:scale(1.1);
+    transform:scale(1.08);
     transition:transform 0.5s ease-out;
 }
-                                                /*FOOTER*/
+                         /*FOOTER*/
 
  /*max-width, si l'écran est inferieur ou égal, alors {...}*/
  /*max-width = desktop-first*/
@@ -279,41 +351,59 @@ main > .texte01 > span{
     align-items:center;
     text-align:center;
     font-size:1.1em;
-    font-family:libre baskerville;
+    font-family: 'Julius Sans One', sans-serif;
     color:white;
 }
 
                 /*picto info page contact*/
 .infocontact{
     text-align:center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+    font-family: 'Julius Sans One', sans-serif;
 }
 .pictocontact{
     justify-content:center;
     text-align:center;
     margin:2em;
     height:50px;
-    font-family:libre baskerville;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 10px;
 }
                 /* formulaire/maps page contact*/
 .formumaps{
-    display:flex;
+    margin: 0 auto;
     flex-wrap:wrap;
     justify-content:space-around;
-    width:100%;
+    
 }
+
+
 .googlemaps{
-    margin-left:5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    
 }
+
 .formulaire {
-    width:350px;
-    margin:1em;
+    width:40%;
+    margin: 0 auto;
     padding:20px;
     bottom:3em;
     border:1px solid #222;
     border-radius:2px;
     box-shadow:0 0 5px #222;
-    font-family:libre baskerville;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 600;
     background-color: transparent;
+    margin-bottom: 2em;
 }
 form {
     display:flex;
